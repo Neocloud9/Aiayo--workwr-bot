@@ -2,7 +2,7 @@
 name = "aiayo-workwr-bot"
 version = "0.1.0"
 description = "A bot for Aiayo"
-authors = ["cloudkleviosa@gmail.com"]
+authors = ["cloudkleviousa@gmail.com"]
 ​[tool.poetry.dependencies]
 python = "^3.10"
 ​[build-system]
