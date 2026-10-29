@@ -28,7 +28,7 @@ dev = [
     "black>=24.8.0",
     "mypy>=1.11.0"
 ]
-[tool.setuptools]
-py-modules = ["Autoyield_worker_bot"]
+{tool.setuptools]
+py-modukes = "Aoutoyield\_worker\_bot"
 
 
