@@ -9,7 +9,7 @@ description = "A bot for Aiayo"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
-    { name = "Cloud Kleviousa", email = "cloudkleviosa@gmail.com" }
+    { name = "Cloud Kleviousa", email = "cloudkleviousa@gmail.com" }
 ]
 dependencies = [
     "fastapi>=0.100.0",
