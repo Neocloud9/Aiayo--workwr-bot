@@ -29,6 +29,6 @@ dev = [
     "mypy>=1.11.0"
 ]
 {tool.setuptools]
-py-modukes = "Aoutoyield\_worker\_bot"
+py-modules = "Aoutoyield\_worker\_bot"
 
 
