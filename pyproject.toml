@@ -19,9 +19,9 @@ dependencies = [
     "requests>=2.32.0",
     "python-dotenv>=1.0.1",
     "httpx>=0.27.0"
-    "schedule"
+    "schedule"]
 
-[project.optional-dependencies]
+project.optional-dependencies
 dev = [
     "pytest>=8.3.0",
     "ruff>=0.6.0",
