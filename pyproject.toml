@@ -29,7 +29,7 @@ dev = [
     "mypy>=1.11.0"
 ]
 [tool.setuptools]
-py-modules = ["Autoyield_worker_bot"]
+py-modules = ["autoyield_worker_bot"]
 
 
 
