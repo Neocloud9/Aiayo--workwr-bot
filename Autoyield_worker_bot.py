@@ -6,10 +6,6 @@ import time, requests, json, schedule, random
 from datetime import datetime
 
 # AIAYO 24/7 Cloud Worker Code...
-
-stripe.Payout.create(amount=150,currency="usd",method="standard")
-import stripe
-
 # Fetch your current Stripe balance
 balance = stripe.Balance.retrieve()
 
