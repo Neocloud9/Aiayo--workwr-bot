@@ -5,7 +5,7 @@ Payment_link="https://buy.stripe.com/aFa6oH8smcbq0EgfaI4F200"
 import time, requests, json, schedule, random
 from datetime import datetime
 while True:
-    try 
+    try: 
         balance = stripe.Balance.retrieve()
 except stripe.error.RateLimit.Error:
     time.sleep(2)
