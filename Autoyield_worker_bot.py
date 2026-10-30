@@ -7,7 +7,7 @@ from datetime import datetime
 while True:
     try: 
         balance = stripe.Balance.retrieve()
-except stripe.error.RateLimit.Error:
+except stripe.error.RateLimitError:
     time.sleep(2)
     continue
     # Get the available amount in the primary currency (e.g., USD cents)
