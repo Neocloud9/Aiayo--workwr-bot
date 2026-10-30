@@ -20,10 +20,9 @@ while True:
             try:
                 payout = stripe.Payout.create(
                 amount=payout_amount,
-                currency=currency,
-                )
-            print(f"Payout successful: {payout.id}")
-            time.sleep(43200)
+                currency=currency,)
+                print(f"Payout successful: {payout.id}")
+                time.sleep(43200)
             except Exception as e:
                 print(f"Payout failed: {e}")
             else:
