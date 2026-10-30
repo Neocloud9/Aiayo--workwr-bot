@@ -5,8 +5,11 @@ Payment_link="https://buy.stripe.com/aFa6oH8smcbq0EgfaI4F200"
 import time, requests, json, schedule, random
 from datetime import datetime
 while True:
-    balance = stripe.Balance.retrieve()
-    
+    try 
+        balance = stripe.Balance.retrieve()
+except stripe.error.RateLimit.Error:
+    time.sleep(2)
+    continue
     # Get the available amount in the primary currency (e.g., USD cents)
     # Assumes balance.available contains at least one currency entry
     available_amount = balance.available[0].amount if balance.available else 0
