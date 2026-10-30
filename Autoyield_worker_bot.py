@@ -4,8 +4,7 @@ stripe.api_key = os.getenv ("stripe_secret_key")
 Payment_link="https://buy.stripe.com/aFa6oH8smcbq0EgfaI4F200"
 import time, requests, json, schedule, random
 from datetime import datetime
-while True:# AIAYO 24/7 Cloud Worker Code...
-    # Fetch your current Stripe balance
+while True:
     balance = stripe.Balance.retrieve()
     
     # Get the available amount in the primary currency (e.g., USD cents)
