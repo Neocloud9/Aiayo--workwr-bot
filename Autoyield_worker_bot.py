@@ -17,14 +17,14 @@ while True:
     
     if available_amount >= payout_amount:
     # Proceed with the payout if funds are sufficient
-        try:
-            payout = stripe.Payout.create(
-            amount=payout_amount,
-            currency=currency,
-            )
+            try:
+                payout = stripe.Payout.create(
+                amount=payout_amount,
+                currency=currency,
+                )
             print(f"Payout successful: {payout.id}")
             time.sleep(43200)
             except Exception as e:
                 print(f"Payout failed: {e}")
-    else:
+            else:
                     print(f"Skipping payout: Available balance ({available_amount}) is below the required amount ({payout_amount}).")
