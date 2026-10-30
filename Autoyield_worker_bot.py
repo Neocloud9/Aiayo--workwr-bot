@@ -8,8 +8,8 @@ while True:
     try: 
         balance = stripe.Balance.retrieve()
 except stripe.error.RateLimitError:
-    time.sleep(2)
-    continue
+        time.sleep(2)
+        continue
     # Get the available amount in the primary currency (e.g., USD cents)
     # Assumes balance.available contains at least one currency entry
     available_amount = balance.available[0].amount if balance.available else 0
